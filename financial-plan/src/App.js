@@ -1,24 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Button from './components/UI/Button';
+import Card from './components/UI/Card';
+import ModalWin from './components/UI/ModalWin';
 
-function App() {
+
+function App(props) {
+  const closeButtonPressed=()=>{
+    
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Card CardStyle="BackColorLight-Blue">
+        <Button
+          name="Add expense" 
+          ButtonStyle="withBackgroundButton" 
+          type="button" 
+          onClick={closeButtonPressed}/>
+      </Card>       
+      <Card CardStyle="BackColorLight-Blue">
+        <p>expenses</p>
+      </Card>         
+      <ModalWin/>            
+    </React.Fragment>
   );
 }
 
