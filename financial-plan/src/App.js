@@ -1,16 +1,27 @@
 import React from 'react';
-import './App.css';
-import Button from './components/UI/Button';
-import Card from './components/UI/Card';
-import ModalWin from './components/UI/ModalWin';
+import './App.module.css';
+import ExpenseHolder from './components/UI/ExpenceHolder';
 
 
 function App(props) {
-  const closeButtonPressed=()=>{
-    
-  }
+  
   return (
-    <React.Fragment>
+  
+    <ExpenseHolder
+      key="1"
+      ExpenseTitle={"test"}
+      ExpenseText={"asufhpasuhgpsugh"}
+      ExpenseAmount={"50"}
+    />
+  );
+}
+
+export default App;
+
+
+
+
+ /* <React.Fragment>
       <Card CardStyle="BackColorLight-Blue">
         <Button
           name="Add expense" 
@@ -22,8 +33,4 @@ function App(props) {
         <p>expenses</p>
       </Card>         
       <ModalWin/>            
-    </React.Fragment>
-  );
-}
-
-export default App;
+    </React.Fragment>*/
