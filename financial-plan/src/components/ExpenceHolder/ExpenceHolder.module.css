@@ -1,9 +1,10 @@
 .Cart{
-    box-sizing: border-box;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
-    width: 200px;
-    height: 220px;
+    align-items: center;
+    width: 12rem;
+    height: 13rem;
     margin: 2rem;
     background: linear-gradient(360deg, #000000 18.26%, rgba(38, 36, 112, 0.85) 100%);
     border: 3px solid #000000;

@@ -1,3 +1,4 @@
+import Card from '../UI/Card';
 import classes from './ExpenceHolder.module.css';
 
 
@@ -9,11 +10,11 @@ const ExpenseHolder=(props)=>{
 
     return(
         <div className={classes.Cart}>
-            <p className={classes.Title}>{props.ExpenseTitle}</p>
-            <p className={classes.Text}>{props.ExpenseText}</p>
-            <p className={classes.Amount}>Amount: {props.ExpenseAmount}</p>
+            <div className={classes.Title}>{props.ExpenseTitle}</div>
+            <div className={classes.Text}>{props.ExpenseText}</div>
+            <div className={classes.Amount}>Amount: {props.ExpenseAmount} {props.ExpenceCurrency}</div>
             <button className={classes.button} onClick={EditExpense}>Edit</button>
-        </div>
+        </div>       
     );
 }
 

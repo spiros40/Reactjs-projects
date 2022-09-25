@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.module.css';
-import ExpenseHolder from './components/UI/ExpenceHolder';
+import ExpenseHolder from './components/ExpenceHolder/ExpenceHolder';
 
 
 function App(props) {
@@ -10,8 +10,9 @@ function App(props) {
     <ExpenseHolder
       key="1"
       ExpenseTitle={"test"}
-      ExpenseText={"asufhpasuhgpsugh"}
+      ExpenseText={"simply dummy text of the printing and typesetting industry."}
       ExpenseAmount={"50"}
+      ExpenceCurrency={'$'}
     />
   );
 }
