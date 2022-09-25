@@ -1,4 +1,4 @@
-import Card from '../UI/Card';
+
 import classes from './ExpenceHolder.module.css';
 
 

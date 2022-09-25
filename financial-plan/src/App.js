@@ -1,12 +1,16 @@
 import React from 'react';
 import './App.module.css';
 import ExpenseHolder from './components/ExpenceHolder/ExpenceHolder';
+import Menu from "./components/Menu/Menu";
+import MenuVertical from './components/Menu/MenuVertical';
 
 
 function App(props) {
   
   return (
-  
+    <div>
+    <Menu/>  
+    <MenuVertical/>
     <ExpenseHolder
       key="1"
       ExpenseTitle={"test"}
@@ -14,6 +18,7 @@ function App(props) {
       ExpenseAmount={"50"}
       ExpenceCurrency={'$'}
     />
+    </div>
   );
 }
 
