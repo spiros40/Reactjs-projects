@@ -1,7 +1,7 @@
 import {Fragment} from 'react'
 import classes from './LoginPage.module.css';
 import Button from '../UI/Button';
-import Cart from '../UI/Card';
+import Card from '../UI/Card';
 
 
 const LoginPage=()=>{
@@ -21,7 +21,7 @@ const LoginPage=()=>{
     return(
         <Fragment>
             
-             <Cart CardStyle='LoginWinBackground'>
+             <Card CardStyle='LoginWinBackground'>
             <div className={classes.loginPage}>
                 <div>
                     <label htmlFor="username">UserName:</label>
@@ -56,7 +56,7 @@ const LoginPage=()=>{
                         type="button"/>
                 </div>
             </div>
-        </Cart>        
+        </Card>        
         </Fragment>
     );
 }
