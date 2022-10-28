@@ -1,11 +1,21 @@
 import classes from './MenuVertical.module.css';
+import MenuCart from './MenuCard';
 
 
 const MenuVertical=(props)=>{
     return(
-<div className={classes.menuVertical}>
-
-</div>
+        <MenuCart 
+            classSelection='menuVertical' 
+            styleSelection='stylePurple'>
+                
+            <ul className={classes.list}>
+                <li>Find </li>
+                <li>Add </li>
+                <li>Delete</li>
+                <li>Settings</li>
+                <li>Login in</li>
+            </ul>
+        </MenuCart>
     );
 }
 

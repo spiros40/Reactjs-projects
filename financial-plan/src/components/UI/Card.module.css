@@ -6,5 +6,26 @@
   }
 
   .BackColorLight-Blue{
-    background-color:rgb(34, 189, 209);
+    background-color:rgba(7, 19, 20, 0.692);
+    padding: 1.7rem;
+    width: 29rem;
+    height: 15rem;
+    
+  }
+
+  .LoginWinBackground{
+    background-color:rgba(7, 19, 20, 0.592);
+    padding: 1.7rem;
+    width: 29rem;
+    height: 15rem;    
+    animation-name: loginWinBlur;
+    animation-duration: 2s;
+        
+  }
+  @keyframes loginWinBlur {
+    0%   {filter: blur(20px);}
+    25%  {filter: blur(15px);}
+    50%  {filter: blur(5px);}
+    75%  {filter: blur(2px);}
+    100% {filter: blur(0px);}
   }

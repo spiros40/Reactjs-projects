@@ -1,13 +1,25 @@
-.menuCart{
+.stylePurple{
+    background: linear-gradient(360deg, #000000 18.26%, rgba(38, 36, 112, 0.85) 100%);
+    border: 3px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem 0px; 
+}
+
+.menuHorizontal{
     color: antiquewhite;
     font-size: 1rem;
     width: 80%;
     height: 2.5rem;
-    text-align: right;
-    background: linear-gradient(360deg, #000000 18.26%, rgba(38, 36, 112, 0.85) 100%);
-    border: 3px solid #000000;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px 0px;    
-    margin: 0.1rem;
+    text-align: right;   
+    margin: 0.5rem;
+}
+
+.menuVertical{
+    color: antiquewhite;
+    font-size: 1rem;
+    width: 13%;
+    height: 30rem;
+    text-align: left;   
+    margin: 0.5rem;   
 }
 

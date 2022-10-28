@@ -3,7 +3,10 @@ import classes from "./Menu.module.css";
 
 const Menu=()=>{
     return(
-        <MenuCard>
+        <MenuCard 
+            classSelection='menuHorizontal' 
+            styleSelection='stylePurple'>
+                
             <ul className={classes.list}>
                 <li>Home</li>
                 <li>Add Expense</li>

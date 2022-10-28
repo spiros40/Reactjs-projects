@@ -2,8 +2,7 @@
     font: inherit;
     cursor: pointer;
     margin-left: 1rem;
-    padding: 0.25rem 2rem;
-    border-radius: 20px;
+    padding: 0.25rem 1.2rem;
     font-weight: bold;
   }
 
@@ -11,11 +10,13 @@
     background-color: #f7dbd0;
     border: 1px solid #ebb099;
     color: black;
+    border-radius: 20px;
 }
 .withBackgroundButton{
     background-color: #064a8a;
     border: 1px solid #06558a;
     color: white;
+    border-radius: 20px;
 }
  
   .withBackgroundButton:hover,
@@ -28,4 +29,17 @@
   .noBackgroundButton:active {
     background-color: #f1ad93;
     border-color: #641e03;
+  }
+
+
+  .LoginWin{
+    background-color: #787b7e;
+    border: 1px solid #000000;
+    color: white;
+    border-radius: 0.5rem;
+}
+  .LoginWin:hover,
+  .LoginWin:active {
+    background-color: #000000;
+    border-color: #ff0000;
   }
