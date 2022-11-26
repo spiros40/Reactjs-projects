@@ -28,5 +28,14 @@
   
 }
 .content{
-  position:sticky;
+  display:inline-flex;
+  flex-wrap: wrap;
+}
+
+.box4 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  
 }

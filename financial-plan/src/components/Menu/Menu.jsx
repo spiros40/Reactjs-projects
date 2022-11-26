@@ -2,16 +2,28 @@ import MenuCard from "./MenuCard";
 import classes from "./Menu.module.css";
 
 const Menu=()=>{
+    const goToHome=()=>{
+        console.log("Go to home");
+    }
+    const openAddExpense=()=>{
+
+    }
+    const searchExpense=()=>{
+
+    }
+    const openAbout=()=>{
+        
+    }
     return(
         <MenuCard 
             classSelection='menuHorizontal' 
             styleSelection='stylePurple'>
                 
             <ul className={classes.list}>
-                <li>Home</li>
-                <li>Add Expense</li>
-                <li>View Expense</li>
-                <li>About</li>
+                <li onClick={goToHome}>Home</li>
+                <li onClick={openAddExpense}>Add Expense</li>
+                <li onClick={searchExpense}>View Expense</li>
+                <li onClick={openAbout}>About</li>
             </ul>
         </MenuCard>
     );
