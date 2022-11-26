@@ -36,7 +36,11 @@
     background-color: #787b7e;
     border: 1px solid #000000;
     color: white;
+    font-size: 1rem;
+    text-align: center;
     border-radius: 0.5rem;
+    height: 2rem;
+    width: 6.5rem;
 }
   .LoginWin:hover,
   .LoginWin:active {

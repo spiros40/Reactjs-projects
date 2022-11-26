@@ -24,7 +24,7 @@ const LoginPage=()=>{
              <Card CardStyle='LoginWinBackground'>
             <div className={classes.loginPage}>
                 <div>
-                    <label htmlFor="username">UserName:</label>
+                    {/* <label htmlFor="username">UserName:</label> */}
                     <input
                     type='text'
                     id='username'
@@ -35,7 +35,7 @@ const LoginPage=()=>{
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">PassWord:</label>
+                    {/* <label htmlFor="password">PassWord:</label> */}
                     <input
                         type='password'
                         id='password'

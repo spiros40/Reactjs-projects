@@ -30,7 +30,7 @@ body {
 }
 
 .loginPage label{
-    color:rgb(255, 255, 255);
+    color:rgb(171, 173, 58);
     background-color: none;
     font-weight: bolder;
     font-size: 1rem;
@@ -39,7 +39,7 @@ body {
 
 .loginPage input{
     color: black;
-    background-color: rgb(240, 232, 223);
+    background-color: rgb(141, 137, 132);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     font-size: 0.9rem;
     font-weight: bolder;
@@ -54,6 +54,6 @@ body {
 
 .ButtonStyle{  
   position: absolute;
-  left: 7.5rem;  
+  left: 7.5rem;
 }
 

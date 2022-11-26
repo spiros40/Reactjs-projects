@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+
+body {
+    margin: 0;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;  
+    z-index: 0;
+  }
+
 .list{
     padding-top:1rem;
 }

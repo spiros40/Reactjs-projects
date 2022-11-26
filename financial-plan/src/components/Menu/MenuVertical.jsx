@@ -9,7 +9,7 @@ const MenuVertical=(props)=>{
             styleSelection='stylePurple'>
                 
             <ul className={classes.list}>
-                <li>Find </li>
+                <li>Find</li>
                 <li>Add </li>
                 <li>Delete</li>
                 <li>Settings</li>
