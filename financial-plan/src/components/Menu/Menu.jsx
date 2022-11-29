@@ -1,9 +1,10 @@
 import MenuCard from "./MenuCard";
 import classes from "./Menu.module.css";
+import { ApiLinks } from "../../Data/ApiLinks";
 
 const Menu=()=>{
     const goToHome=()=>{
-        console.log("Go to home");
+        console.log("");
     }
     const openAddExpense=()=>{
 
