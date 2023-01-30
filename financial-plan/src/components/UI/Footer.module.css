@@ -4,11 +4,12 @@
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: black;
-    width: 90%;
-    bottom: 2%;
+    width: 90%;    
     justify-content: center;
     text-align: center;
     padding: 4% 0% 0% 0%;
     display:inline-flex;
     flex-wrap: none;
+    position:absolute;
+    bottom:0;
 }

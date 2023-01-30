@@ -17,24 +17,28 @@ body {
    align-items: center;
    font-family: 'Silkscreen', cursive;
    font-weight: bolder;  
-   z-index: 0;
+   z-index: 0;   
  }
  
  .loginPage{
-  z-index: 2;
+  z-index: 2;  
  }
 
 .loginPage div{
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding: 0.7rem;
 }
 
-.loginPage label{
-    color:rgb(171, 173, 58);
-    background-color: none;
+.Label{
+    color:rgb(141, 137, 132);
+    background-color:transparent;
     font-weight: bolder;
-    font-size: 1rem;
-    padding-right: 0.7rem;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+  
 }
 
 .loginPage input{
@@ -43,7 +47,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
     font-size: 0.9rem;
     font-weight: bolder;
-    width: 15rem;
+    width: 19rem;
     border-radius: 0.5rem;
 }
 
@@ -52,8 +56,9 @@ body {
   border-radius: 3px;
 }
 
-.ButtonStyle{  
-  position: absolute;
-  left: 7.5rem;
+.ButtonStyle{    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 

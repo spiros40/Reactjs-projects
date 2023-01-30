@@ -20,6 +20,9 @@
     height: 15rem;    
     animation-name: loginWinBlur;
     animation-duration: 1.5s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
         
   }
   @keyframes loginWinBlur {

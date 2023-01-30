@@ -1,15 +1,31 @@
-import {Fragment} from 'react'
+import {Fragment,useRef, useState} from 'react'
 import classes from './LoginPage.module.css';
 import Button from '../UI/Button';
 import Card from '../UI/Card';
 
 
-const LoginPage=()=>{
-    const NameChangedHandler=(()=>{
+const LoginPage=(props)=>{
+    const [userName, setUserName]=useState('Enter Username');    
+    const [passWord, setPassWord] = useState('Enter Username');
+    const userNameRef=useRef();
+    const passWordRef=useRef();
+    
 
+    const CancelButtonClicked=(event)=>{
+        setUserName("Enter Username");
+        setPassWord("Enter PassWord");
+        userNameRef.current.value=""; 
+        passWordRef.current.value=""; 
+    }
+    const OkButtonClicked=(event)=>{
+        setUserName(userNameRef.current.value);
+        setPassWord(passWordRef.current.value);
+        console.log("name "+userName);
+        console.log("pass "+passWord);
+    };
+    const NameChangedHandler=(()=>{
     });
-    const NameBlurHandler=(()=>{
-        
+    const NameBlurHandler=(()=>{  
     });
     const PassChangedHandler=(()=>{
         
@@ -17,30 +33,33 @@ const LoginPage=()=>{
     const PassBlurHandler=(()=>{
         
     });
-
+   
     return(
         <Fragment>
             
+
              <Card CardStyle='LoginWinBackground'>
-            <div className={classes.loginPage}>
+             <form className={classes.loginPage}>
                 <div>
-                    {/* <label htmlFor="username">UserName:</label> */}
-                    <input
-                    type='text'
-                    id='username'
-                    size="20"
-                    placeholder="UserName"
-                    onClick={NameChangedHandler}
-                    onBlur={NameBlurHandler}
+                    <label htmlFor="username" className={classes.Label}>-Login-</label>
+                    <input     
+                        ref={userNameRef}                
+                        type='text'
+                        id='username'
+                        size="20" 
+                        placeholder='Enter Username'                       
+                        onClick={NameChangedHandler}
+                        onBlur={NameBlurHandler}                   
                     />
                 </div>
                 <div>
                     {/* <label htmlFor="password">PassWord:</label> */}
-                    <input
+                    <input 
+                        ref={passWordRef}
                         type='password'
                         id='password'
                         size="20"
-                        placeholder="PassWord"
+                        placeholder='Enter PassWord'
                         onClick={PassChangedHandler}
                         onBlur={PassBlurHandler}
                     />
@@ -49,13 +68,15 @@ const LoginPage=()=>{
                     <Button 
                         name="Cancel" 
                         ButtonStyle="LoginWin" 
-                        type="button"/>
+                        type="button"
+                        onClick={CancelButtonClicked}/>
                     <Button 
                         name="Ok" 
                         ButtonStyle="LoginWin" 
-                        type="button"/>
+                        type="button"
+                        onClick={OkButtonClicked}/>
                 </div>
-            </div>
+            </form>
         </Card>        
         </Fragment>
     );
