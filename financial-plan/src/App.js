@@ -1,75 +1,30 @@
-import React from 'react';
-import classes from './App.module.css';
-import ExpenseHolder from './components/ExpenceHolder/ExpenceHolder';
-import Menu from "./components/Menu/Menu";
-import MenuVertical from './components/Menu/MenuVertical';
-import Footer from './components/UI/Footer';
-import LoginPage from './components/Login/LoginPage';
-import About from './components/About/About';
-  
+import {useState} from 'react';
+import LoginPage from '../src/components/Pages/Login/LoginPage';
+import About from '../src/components/Pages/About/About';
+  import Expense from './components/Pages/Expense/Expense';
 
 function App(props) {
-  
-  return (
-    // <LoginPage/>
-    <About/>
+  const [count, setCount] = useState(0);
+   
+  const test1=()=>{
+    if(count===1){setCount(0);
+    }else{setCount(1);}
+    
+    console.log(">>>>>>>>>>>>>");
+    
+    }
 
-  //   <div className={classes.wrapper}>
-  //     <div className={classes.box1}><Menu/></div>
-  //     <div className={classes.box2}><MenuVertical/></div>
-  //     <div className={classes.box3}>
-  //       <div className={classes.content}>
-  //       <ExpenseHolder
-  //         key='1'
-  //         ExpenseTitle={"test"}
-  //         ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //         ExpenseAmount={"50"}
-  //         ExpenceCurrency={'$'}
-  //       />    
-  //       <ExpenseHolder
-  //       key='2'
-  //       ExpenseTitle={"test"}
-  //       ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //       ExpenseAmount={"50"}
-  //       ExpenceCurrency={'$'}
-  //     />  
-  //     <ExpenseHolder
-  //     key='3'
-  //     ExpenseTitle={"test"}
-  //     ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //     ExpenseAmount={"50"}
-  //     ExpenceCurrency={'$'}
-  //   />  
-  //   <ExpenseHolder
-  //   key='i'
-  //   ExpenseTitle={"test"}
-  //   ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //   ExpenseAmount={"50"}
-  //   ExpenceCurrency={'$'}
-  // />
-  // <ExpenseHolder
-  //         key='4'
-  //         ExpenseTitle={"test"}
-  //         ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //         ExpenseAmount={"50"}
-  //         ExpenceCurrency={'$'}
-  //       /> 
-  //        <ExpenseHolder
-  //         key='5'
-  //         ExpenseTitle={"test"}
-  //         ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //         ExpenseAmount={"50"}
-  //         ExpenceCurrency={'$'}
-  //       />  
-  //       <ExpenseHolder
-  //         key='6'
-  //         ExpenseTitle={"test"}
-  //         ExpenseText={"simply dummy text of the printing and typesetting industry."}
-  //         ExpenseAmount={"50"}
-  //         ExpenceCurrency={'$'}
-  //       /></div></div>
-  //       <div className={classes.box4}><Footer/></div>
-  //   </div>
+  return (
+    <>
+    {/* <LoginPage/> */}
+    {/* <About/> */}
+    {/* <Expense/> */}
+    {/* <Expense/> */}
+    
+  <button onClick={test1}>test</button>
+{count===0 ? <LoginPage/>:<Expense/>}
+    </>
+  
     
   );
 }

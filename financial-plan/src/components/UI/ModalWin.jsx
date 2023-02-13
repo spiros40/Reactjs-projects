@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDom from "react-dom";
 import styles from './ModalWin.module.css';
-import AddExpense from "../AddNewExpense/AddExpence";
+import AddExpense from "../ExpenseFeatures/AddExpence";
 
 const Backdrop=()=>{
     return(
