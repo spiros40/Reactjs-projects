@@ -1,8 +1,17 @@
 import React from "react";
 import Button from "../UI/Button";
 import styles from './AddExpense.module.css';
+import ReactDom from "react-dom";
+import FindExpense from '../ExpenseFeatures/FindExpense';
+import DeleteExpense from '../ExpenseFeatures/DeleteExpense';
 
-const AddExpense=(props)=>{
+const Backdrop=()=>{
+    return(
+        <div className={styles.backdrop}/>
+    );
+}
+const AddExpense=()=>{
+
     return(
         <form className={styles.form}>
             <div className={styles.div}>
@@ -45,7 +54,7 @@ const AddExpense=(props)=>{
                     name="expenseAmount"
                     type="number"
                     placeholder="Enter Expense Amount"
-                    maxlength="10"
+                    maxLength="10"
                     required/>    
             </div>
             
@@ -73,4 +82,14 @@ const AddExpense=(props)=>{
     );
 }
 
-export default AddExpense;
+
+const Modal=(props)=>{
+    return(
+        <React.Fragment>
+            {ReactDom.createPortal(<Backdrop/>, document.getElementById("backdrop-root"))}
+            {ReactDom.createPortal(<AddExpense onClick={props.onClick}/>, document.getElementById("modal-root"))}
+        </React.Fragment>    
+    );
+}
+
+export default Modal;

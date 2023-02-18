@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import LoginPage from '../src/components/Pages/Login/LoginPage';
 import About from '../src/components/Pages/About/About';
-  import Expense from './components/Pages/Expense/Expense';
+import Expense from './components/Pages/Expense/Expense';
 
 function App(props) {
   const [count, setCount] = useState(0);
@@ -9,8 +9,6 @@ function App(props) {
   const test1=()=>{
     if(count===1){setCount(0);
     }else{setCount(1);}
-    
-    console.log(">>>>>>>>>>>>>");
     
     }
 
