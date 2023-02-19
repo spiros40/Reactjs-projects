@@ -1,8 +1,15 @@
 import React from "react";
 import Button from "../UI/Button";
+import ReactDom from "react-dom";
 import styles from './DeleteExpense.module.css';
 
-const AddExpense=(props)=>{
+const Backdrop=()=>{
+    return(
+        <div className={styles.backdrop}/>
+    );
+}
+
+const DeleteExpense=(props)=>{
     return(
         <form className={styles.form}>
             <div className={styles.div}>
@@ -40,5 +47,13 @@ const AddExpense=(props)=>{
         </form>
     );
 }
+const Modal=(props)=>{
+    return(
+        <React.Fragment>
+            {ReactDom.createPortal(<Backdrop/>, document.getElementById("backdrop-root"))}
+            {ReactDom.createPortal(<DeleteExpense onClick={props.onClick}/>, document.getElementById("modal-root"))}
+        </React.Fragment>    
+    );
+}
 
-export default AddExpense;
+export default Modal;

@@ -10,8 +10,12 @@ const Backdrop=()=>{
         <div className={styles.backdrop}/>
     );
 }
-const AddExpense=()=>{
+const AddExpense=(props)=>{
 
+    const exitHandler=()=>{
+        console.log(props.addModal+"111");
+        return props.addModal=false;
+    }
     return(
         <form className={styles.form}>
             <div className={styles.div}>
@@ -76,6 +80,7 @@ const AddExpense=()=>{
                     name="Return" 
                     ButtonStyle="withBackgroundButton" 
                     type="button" 
+                    onClick={exitHandler}
                 />
             </div>
         </form>

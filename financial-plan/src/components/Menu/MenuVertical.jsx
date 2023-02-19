@@ -31,21 +31,20 @@ const MenuVertical=(props)=>{
         // window.open('Reactjs-projects/financial-plan/src/components/UI/ModalWin.jsx'); 
         setSettingsModal(true);
     }
-    const closeCartHandler=()=>{
-        // setAddModal(false);
+    const exitHandler=()=>{
+         setAddModal(false);
         // setFindModal(true);
         console.log("++++++++++");
-        <ModalWin page="DeleteExpense"/>
     }
 
     return(
         <MenuCart 
             classSelection='menuVertical' 
             styleSelection='stylePurple'>
-                {addModal && <AddExpense onClick={closeCartHandler}/>}
-                {findModal && <ModalWin page="FindExpense"/>}
-                {deleteModal && <ModalWin page="DeleteExpense"/>}
-                {settingsModal ? <ModalWin page=""/>:"Login in"}
+                {addModal && <AddExpense onClick={exitHandler}val={addModal}/>}
+                {findModal && <FindExpense/>}
+                {deleteModal && <DeleteExpense/>}
+                {/* {settingsModal && <Settings/>} */}
             <ul className={classes.list}>
                 <li onClick={FindHandler}>Find</li>
                 <li onClick={AddHandler}>Add </li>
