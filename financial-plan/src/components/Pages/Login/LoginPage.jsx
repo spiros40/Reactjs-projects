@@ -11,7 +11,7 @@ const LoginPage=(props)=>{
     const passWordRef=useRef();
     
 
-    const CancelButtonClicked=(event)=>{
+    const ClearButtonClicked=(event)=>{
         setUserName("Enter Username");
         setPassWord("Enter PassWord");
         userNameRef.current.value=""; 
@@ -35,9 +35,7 @@ const LoginPage=(props)=>{
     });
    
     return(
-        <Fragment>
-            
-
+        <Fragment>            
              <Card CardStyle='LoginWinBackground'>
              <form className={classes.loginPage}>
                 <div>
@@ -50,10 +48,9 @@ const LoginPage=(props)=>{
                         placeholder='Enter Username'                       
                         onClick={NameChangedHandler}
                         onBlur={NameBlurHandler}                   
-                    />
+                    /> 
                 </div>
                 <div>
-                    {/* <label htmlFor="password">PassWord:</label> */}
                     <input 
                         ref={passWordRef}
                         type='password'
@@ -66,10 +63,10 @@ const LoginPage=(props)=>{
                 </div>
                 <div className={classes.ButtonStyle}>
                     <Button 
-                        name="Cancel" 
+                        name="Clear" 
                         ButtonStyle="LoginWin" 
                         type="button"
-                        onClick={CancelButtonClicked}/>
+                        onClick={ClearButtonClicked}/>
                     <Button 
                         name="Ok" 
                         ButtonStyle="LoginWin" 

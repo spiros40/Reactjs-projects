@@ -1,10 +1,10 @@
 import { Fragment } from "react";
-import Menu from "../../Menu/Menu";
 import Footer from "../../UI/Footer";
 import aboutText from "../../../Data/aboutText.js";
 import classes from "./About.module.css";
+import Menu from "../../Menu/Menu";
 
-const about =(props)=>{
+const About =(props)=>{
 
     return(
             <Fragment>
@@ -19,4 +19,4 @@ const about =(props)=>{
     );
 }
 
-export default about;
+export default About;

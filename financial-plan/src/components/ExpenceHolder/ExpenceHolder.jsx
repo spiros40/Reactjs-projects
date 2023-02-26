@@ -1,8 +1,6 @@
 
 import classes from './ExpenceHolder.module.css';
 
-
-
 const ExpenseHolder=(props)=>{
     const EditExpense=()=>{
         console.log("button");

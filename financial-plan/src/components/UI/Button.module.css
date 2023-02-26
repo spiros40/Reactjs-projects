@@ -4,6 +4,7 @@
     margin-left: 1rem;
     padding: 0.25rem 1.2rem;
     font-weight: bold;
+    font-family: sans-serif;
   }
 
   .noBackgroundButton{
@@ -46,4 +47,23 @@
   .LoginWin:active {
     background-color: #000000;
     border-color: #ff0000;
+  }
+
+  .ErrorB{
+    border: 1px solid #000000;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    height: 2rem;
+    width: 100%;
+    background-color:rgba(150, 20, 20, 60%);
+    margin-left: 0;
+}
+  .ErrorB:hover,
+  .ErrorB:active {
+    background-color:transparent;
+    border-color: #e60707;
+    color: red;
+    box-shadow: none;
   }

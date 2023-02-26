@@ -1,16 +1,15 @@
 import { Fragment } from "react";
-import Menu from "../../Menu/Menu";
 import Footer from "../../UI/Footer";
 import classes from "./Expense.module.css";
 import MenuVertical from "../../Menu/MenuVertical";
 import ExpenseHolder from "../../ExpenceHolder/ExpenceHolder";
+import Menu from "../../Menu/Menu";
 
 
 const Expense =(props)=>{
-
+    
     return(
         <Fragment>
-                <p className={classes.p}>
                 <div className={classes.wrapper}>
                 <div className={classes.box1}><Menu/></div>
                 <div className={classes.box2}><MenuVertical/></div>
@@ -32,21 +31,21 @@ const Expense =(props)=>{
                 />  
                 <ExpenseHolder
                     key='3'
-                    ExpenseTitle={"test"}
+                    ExpenseTitle={"super market"}
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
                  />  
                 <ExpenseHolder
                     key='i'
-                    ExpenseTitle={"test"}
+                    ExpenseTitle={"Dei"}
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
                 />
                 <ExpenseHolder
                     key='4'
-                    ExpenseTitle={"test"}
+                    ExpenseTitle={"name"}
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
@@ -66,10 +65,8 @@ const Expense =(props)=>{
                     ExpenceCurrency={'$'}
         /></div></div>
         <div className={classes.box4}>
-            <Footer/>
             </div>
             </div>
-                </p>
                 <Footer/> 
             </Fragment>          
     );
