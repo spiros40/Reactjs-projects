@@ -1,4 +1,4 @@
-import {Fragment,useRef, useState} from 'react'
+import {useRef, useState} from 'react'
 import classes from './LoginPage.module.css';
 import Button from '../../UI/Button';
 import Card from '../../UI/Card';
@@ -35,47 +35,49 @@ const LoginPage=(props)=>{
     });
    
     return(
-        <Fragment>            
-             <Card CardStyle='LoginWinBackground'>
-             <form className={classes.loginPage}>
-                <div>
-                    <label htmlFor="username" className={classes.Label}>-Login-</label>
-                    <input     
-                        ref={userNameRef}                
-                        type='text'
-                        id='username'
-                        size="20" 
-                        placeholder='Enter Username'                       
-                        onClick={NameChangedHandler}
-                        onBlur={NameBlurHandler}                   
-                    /> 
-                </div>
-                <div>
-                    <input 
-                        ref={passWordRef}
-                        type='password'
-                        id='password'
-                        size="20"
-                        placeholder='Enter PassWord'
-                        onClick={PassChangedHandler}
-                        onBlur={PassBlurHandler}
-                    />
-                </div>
-                <div className={classes.ButtonStyle}>
-                    <Button 
-                        name="Clear" 
-                        ButtonStyle="LoginWin" 
-                        type="button"
-                        onClick={ClearButtonClicked}/>
-                    <Button 
-                        name="Ok" 
-                        ButtonStyle="LoginWin" 
-                        type="button"
-                        onClick={OkButtonClicked}/>
-                </div>
-            </form>
-        </Card>        
-        </Fragment>
+        
+        <Card CardStyle='WinBackground'>
+            <Card CardStyle='LoginWinBackground' >
+                <form className={classes.loginPage}>
+                    <div>
+                        <label htmlFor="username" className={classes.Label}>-Login-</label>
+                        <input     
+                            ref={userNameRef}                
+                            type='text'
+                            id='username'
+                            size="20" 
+                            placeholder='Enter Username'                       
+                            onClick={NameChangedHandler}
+                            onBlur={NameBlurHandler}                   
+                        /> 
+                    </div>
+                    <div>
+                        <input 
+                            ref={passWordRef}
+                            type='password'
+                            id='password'
+                            size="20"
+                            placeholder='Enter PassWord'
+                            onClick={PassChangedHandler}
+                            onBlur={PassBlurHandler}
+                        />
+                    </div>
+                    <div className={classes.ButtonStyle}>
+                        <Button 
+                            name="Clear" 
+                            ButtonStyle="LoginWin" 
+                            type="button"
+                            onClick={ClearButtonClicked}/>
+                        <Button 
+                            name="Ok" 
+                            ButtonStyle="LoginWin" 
+                            type="button"
+                            onClick={OkButtonClicked}/>
+                    </div>
+                </form>
+            </Card>      
+        </Card>
+
     );
 }
 

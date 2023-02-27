@@ -6,6 +6,7 @@ import Expense from './components/Pages/Expense/Expense';
 import Delete from './components/Pages/ExpenseFeatures/DeleteExpense'
 import ErrorPage from './components/Pages/ErrorPage/ErrorPage';
 import {createBrowserRouter, RouterProvider , Outlet} from "react-router-dom";
+import Settings from './components/Pages/Settings/Settings';
 
 
 // at the beginning define the routes URLs
@@ -17,6 +18,7 @@ const router=createBrowserRouter([
       {path:'/', element:<Expense/>},
       {path:'/Login', element:<LoginPage/>},
       {path:'/About', element:<About/>},
+      {path:'/Settings', element:<Settings/>},
       {path:'/AddExpense', element:<AddExpense/>},
       {path:'/FindExpense', element:<FindExpense/>},
       {path:'/Delete', element:<Delete/>},]},

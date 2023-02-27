@@ -1,18 +1,6 @@
 
 
-* {
-    box-sizing: border-box;    
-  }
-  html{
-    background-image:url('../../../Photos/background.jpg');
-    /* filter:grayscale(100%); */
-    /* -webkit-filter: blur(8px); */
-    /* backdrop-filter: blur(8px); */
-    
-    
-  }
-  
-body {
+.body {
    margin: 0;
    align-items: center;
    font-family: sans-serif;
