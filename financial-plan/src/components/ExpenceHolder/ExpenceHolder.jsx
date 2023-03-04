@@ -7,11 +7,11 @@ const ExpenseHolder=(props)=>{
     }
 
     return(
-        <div className={classes.Cart}>
+        <div className={`${classes.Cart} ${classes[props.styleSelection]}`}>
             <div className={classes.Title}>{props.ExpenseTitle}</div>
             <div className={classes.Text}>{props.ExpenseText}</div>
             <div className={classes.Amount}>Amount: {props.ExpenseAmount} {props.ExpenceCurrency}</div>
-            <button className={classes.button} onClick={EditExpense}>Edit</button>
+            <button className={`${classes.button} ${classes[props.styleButton]}`} onClick={EditExpense}>Edit</button>
         </div>       
     );
 }

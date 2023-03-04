@@ -21,6 +21,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                 />    
                 <ExpenseHolder
                     key='2'
@@ -28,6 +30,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                 />  
                 <ExpenseHolder
                     key='3'
@@ -35,6 +39,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                  />  
                 <ExpenseHolder
                     key='i'
@@ -42,6 +48,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                 />
                 <ExpenseHolder
                     key='4'
@@ -49,6 +57,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                     /> 
                 <ExpenseHolder
                     key='5'
@@ -56,6 +66,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
                 />  
                 <ExpenseHolder
                     key='6'
@@ -63,6 +75,8 @@ const Expense =(props)=>{
                     ExpenseText={"simply dummy text of the printing and typesetting industry."}
                     ExpenseAmount={"50"}
                     ExpenceCurrency={'$'}
+                    styleSelection={"styleBlue"}
+                    styleButton={"styleBlue"}
         /></div></div>
         <div className={classes.box4}>
             </div>

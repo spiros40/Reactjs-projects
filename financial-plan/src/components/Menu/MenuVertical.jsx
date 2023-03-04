@@ -11,9 +11,9 @@ const MenuVertical=(props)=>{
     return(
         <MenuCart 
             classSelection='menuVertical' 
-            styleSelection='styleBlack'>
+            styleSelection='styleBlue'>
           
-            <nav className={styles.list}>
+            <nav className={`${styles.list} ${styles.Body}`}>
                 <li>
                   <Link className={styles.li} to="/FindExpense">Find</Link>
                 </li>

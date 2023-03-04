@@ -2,13 +2,14 @@
 .footer{
     font-family: sans-serif;
     font-size: 14px;
-    color: black;
-    width: 90%;    
+    color:inherit;
+    width: 100%;    
     justify-content: center;
     text-align: center;
-    padding: 4% 0% 0% 0%;
+    padding: 0.5% 0% 0.5% 0%;
     display:flex;
-    flex-wrap: none;
-    position:absolute;
+    flex-wrap:nowrap;
+    position:relative;
     bottom:0;
+    z-index: -1;
 }

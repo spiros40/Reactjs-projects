@@ -9,10 +9,9 @@ const Menu=()=>{
     return(
         <MenuCard 
             classSelection='menuHorizontal' 
-            styleSelection='styleBlack'>
+            styleSelection='styleBlue'>
               
             <nav className={classes.list}>
-              <ul className={classes.list}>
                 <li className={classes.li}>
                   <Link className={classes.link} to="/">Home</Link>
                 </li>
@@ -25,7 +24,6 @@ const Menu=()=>{
                 <li className={classes.li}>
                   <Link className={classes.link} to="/About">About</Link>
                 </li>
-                </ul>
             </nav>
             <Outlet />
         </MenuCard>
