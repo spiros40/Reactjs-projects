@@ -2,7 +2,8 @@ import {useRef, useState} from 'react'
 import classes from './LoginPage.module.css';
 import Button from '../../UI/Button';
 import Card from '../../UI/Card';
-
+import MakeRequest from '../../../Data/ApiGet';
+import ApiRequest from '../../../Data/ApiRequest';
 
 const LoginPage=(props)=>{
     const [userName, setUserName]=useState('Enter Username');    
@@ -22,6 +23,10 @@ const LoginPage=(props)=>{
         setPassWord(passWordRef.current.value);
         console.log("name "+userName);
         console.log("pass "+passWord);
+        //  MakeRequest("https://swapi.dev/api/people/10");
+        //MakeRequest(userName);
+       ApiRequest(userName);
+    
     };
     const NameChangedHandler=(()=>{
     });
