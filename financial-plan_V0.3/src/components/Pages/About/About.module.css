@@ -1,0 +1,12 @@
+.p{
+    width:calc(100% - 400px);
+    margin: auto;
+    padding: auto;
+    text-indent: 4%;
+    text-align: justify;
+    line-height: 1.5rem;
+    margin-top: 5rem;
+    min-width:55%;
+    font-family: sans-serif;
+    color:crimson;
+}

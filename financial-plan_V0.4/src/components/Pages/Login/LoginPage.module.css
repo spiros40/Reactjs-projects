@@ -1,0 +1,52 @@
+
+
+.body {
+   margin: 0;
+   align-items: center;
+   font-family: sans-serif;
+   font-weight: bolder;  
+   z-index: 0;   
+ }
+ 
+ .loginPage{
+  z-index: 2;  
+ }
+
+.loginPage div{
+  margin-bottom: 0.5rem;
+  padding: 0.7rem;
+}
+
+.Label{
+    color:rgb(141, 137, 132);
+    background-color:transparent;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    text-align: center;
+  
+}
+
+.loginPage input{
+    color: black;
+    background-color: rgb(141, 137, 132);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    font-size: 0.9rem;
+    font-weight: bolder;
+    width: 19rem;
+    border-radius: 0.5rem;
+}
+
+.loginPage input :hover{
+  border: 3px solid red;
+  border-radius: 3px;
+}
+
+.ButtonStyle{    
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
