@@ -1,9 +1,13 @@
-var express = require('Express');
-var app = express();
+const express = require('express');
+const app = express();
 
-var routes = require('./routes/routes.js');
+// Define routes
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
 
-//both index.js and things.js should be in same directory
-app.use('/url', routes);
-
-app.listen(3000);
+// Start server
+const PORT = 3001;
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}.`);
+});

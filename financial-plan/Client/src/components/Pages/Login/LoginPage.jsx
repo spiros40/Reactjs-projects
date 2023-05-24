@@ -28,6 +28,16 @@ const LoginPage=(props)=>{
        ApiRequest(userName);
     
     };
+    const makerequestButtonClicked=(event)=>{
+        
+        //MakeRequest("https://swapi.dev/api/people/10");
+        console.log(MakeRequest("http://localhost:3001")+"***************");
+        //M1akeRequest(userName);
+       //ApiRequest(userName);
+    //    console.log("req");
+    
+    };
+
     const NameChangedHandler=(()=>{
     });
     const NameBlurHandler=(()=>{  
@@ -78,6 +88,11 @@ const LoginPage=(props)=>{
                             ButtonStyle="LoginWin" 
                             type="button"
                             onClick={OkButtonClicked}/>
+                            <Button 
+                            name="make a get" 
+                            ButtonStyle="LoginWin" 
+                            type="button"
+                            onClick={makerequestButtonClicked}/>
                     </div>
                 </form>
             </Card>      

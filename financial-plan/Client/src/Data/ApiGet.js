@@ -2,17 +2,23 @@
 
 const MakeRequest= (url)=>{
    fetch(url).then(responce=>{
-    console.log("status: "+responce.status);
-    console.log("ok: "+responce.ok);
-    console.log("Url: "+responce.url);
-    console.log("Body: "+responce.body);
-    console.log("Headers: "+responce.headers);
-    console.log("Json: "+responce.json);
-    return responce;
+    // console.log("status: "+responce.status);
+    // console.log("ok: "+responce.ok);
+    // console.log("Url: "+responce.url);
+    // console.log("Body: "+responce.body);
+    // console.log("Headers: "+responce.headers);
+    // console.log("Json: "+responce.json);
+    return responce.ok;
   }).then((data)=>{
-      console.log("data--> "+data.json().then(data=>{console.log(data.name+"   " 
-      +data.height+" "+data.hair_color+"  "+data.opening_crawl)}));
-   });
+    // console.log("data--> "+ data);
+    return data;
+ });
+  // .then((data)=>{
+  //     console.log("data--> "+data.json().then(data=>{console.log(data.name+"   " 
+  //     +data.height+" "+data.hair_color+"  "+data.opening_crawl)}));
+  //  });
+
+
 }
 
 
