@@ -1,4 +1,16 @@
 
+.list {
+    padding-top:10px;
+    list-style-type: none;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bolder; 
+}
+
+ .li{
+    display: inline-block;
+    
+ }
 .link{
     cursor: pointer;
     padding-left: 1.5rem;
