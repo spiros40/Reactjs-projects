@@ -1,7 +1,11 @@
-
+import MenuCard from './MenuCard';
 
 const SideMenu=(props)=>{
-    return();
+    return(
+        <MenuCard>
+            
+        </MenuCard>
+    );
 }
 
 export default SideMenu;
