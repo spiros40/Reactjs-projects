@@ -1,0 +1,16 @@
+.container {
+    display: grid;
+  }
+  .item {
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+  }
+
+  .item-a {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }

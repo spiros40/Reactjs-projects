@@ -2,12 +2,15 @@ import { Fragment } from "react";
 import Footer from '../../Components/UI/Footer/Footer';
 import MainMenu from '../UI/Menus/MainMenu';
 import BodyCard from '../UI/Body/BodyCard';
+import SideMenu from '../UI/Menus/SideMenu';
+import classes from './Main.module.css';
 
 const Main = (props)=>{
 
     return(
-        <div>
+        <div className={classes.container}>
             <MainMenu/>
+            <SideMenu/>
             <BodyCard 
                 classSelection='Body' 
                 styleSelection='styleWhite'>
