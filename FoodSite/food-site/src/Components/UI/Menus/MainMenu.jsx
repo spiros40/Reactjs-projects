@@ -8,7 +8,7 @@ const MainMenu=(props)=>{
     return(
         <MenuCard
         classSelection='menuHorizontal' 
-            styleSelection='styleBlack'>
+            styleSelection='styleBlue'>
                 <nav className={classes.list}>
                 <li className={classes.li}>
                   <Link className={classes.link} to="/">Home</Link>

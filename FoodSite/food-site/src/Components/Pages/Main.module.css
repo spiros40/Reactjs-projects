@@ -1,16 +1,13 @@
-.container {
-    display: grid;
-  }
-  .item {
-    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
-    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
-    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
-    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
-  }
 
-  .item-a {
-    grid-column-start: 2;
-    grid-column-end: five;
-    grid-row-start: row1-start;
-    grid-row-end: 3;
+  .container {
+            display: grid;
+            grid-template-rows: 10% 90%;
+            grid-template-columns: 15% 70% 15%;
+            grid-template-areas:
+                "topMenu topMenu"
+                "sideMenu Body"
+                "footer footer";
+                border: 1px black solid;
   }
+   
+        

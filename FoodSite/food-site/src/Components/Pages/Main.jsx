@@ -6,15 +6,43 @@ import SideMenu from '../UI/Menus/SideMenu';
 import classes from './Main.module.css';
 
 const Main = (props)=>{
-
+    
     return(
-        <div className={classes.container}>
-            <MainMenu/>
+        <div >
+            <MainMenu />
             <SideMenu/>
             <BodyCard 
                 classSelection='Body' 
                 styleSelection='styleWhite'>
-                    <h1>asdfasdfadf</h1>
+                <h1>
+
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                Importing and using images in HTML is as straightforward as using the image tag and passing the path to the image as the value of the src attribute.
+                
+                </h1>
             </BodyCard>
             <Footer/>
         </div>
